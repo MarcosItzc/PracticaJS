@@ -1,0 +1,56 @@
+/* Establece el cuerpo como un contenedor flex para centrar el contenido verticalmente */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-color:rgb(215, 19, 205);
+
+}
+
+/* Estilos para los contenedores principales */
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+/* Estilos para las figuras */
+.figura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para los cuadros donde se pueden soltar los elementos */
+.box {
+    width: 150px;
+    height: 150px;
+    border: 10px solid black;
+}
+
+/* Estilos para las imágenes */
+img {
+    width: 150px;
+    height: 150px;
+}
+
+button {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 15px 20px; /* Espaciado interno del botón */
+    font-size: 16px; /* Tamaño de fuente */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Borde redondeado */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+button:hover {
+    background-color: #155c18; /* Color de fondo más oscuro al pasar el mouse */
+}
+
+    
+
+    
+    

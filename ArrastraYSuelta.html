@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio extra 1</title>
+    <link rel="stylesheet" href="css/estilo2.css">
+</head>
+<body>
+    <h1>Arrastra donde corresponde</h1>
+    <div class="container">
+        <!-- ondragstart: especifico que debe suceder cuando se arrastra el elemento
+    draggable: indico que el elemento que se podra arrastrar -->
+    <img src="img/loro.jpg" alt="" draggable="true" ondragstart="drag(event)" id="loro">
+    <img src="img/gato.jpeg" alt="" draggable="true" ondragstart="drag(event)" id="gato">
+    <img src="img/perro.jpeg" alt="" draggable="true" ondragstart="drag(event)" id="perro">
+    </div>
+
+    <div class="container">
+        <div class="figura">
+            <!-- ondrop: especifico que sucede  cuando se suelta un elemento arrastrado
+            ondragover: especifica donde se pueden soltar los datos arrastrados-->
+            <div class="box" id="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <h2>Gato</h2>
+        </div>
+        <div class="figura">
+            <!-- ondrop: especifico que sucede  cuando se suelta un elemento arrastrado
+            ondragover: especifica donde se pueden soltar los datos arrastrados-->
+            <div class="box" id="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <h2>Perro</h2>
+        </div>
+        <div class="figura">
+            <!-- ondrop: especifico que sucede  cuando se suelta un elemento arrastrado
+            ondragover: especifica donde se pueden soltar los datos arrastrados-->
+            <div class="box" id="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <h2>Loro</h2>
+        </div>
+    </div>
+    
+    <button onclick="intentarDeNuevo()">Intentar de Nuevo</button> <br>
+    <nav class="regresar">
+        <ul>
+           <a href="index.html"> <button>Inicio</button></a>
+  
+        </ul>
+     </nav>
+
+          
+    
+    <script type="text/javascript" src="js/script.js"></script>
+    
+</body>
+</html>
